@@ -11,14 +11,13 @@
     text-decoration: none;
     text-decoration-color: none;
     overflow: hidden;
-    background: #fbdd88;
 }
 
 
 .card:hover {
     transform: translateY(-7px);
     background-color: #f5b8d2;
-    box-shadow:  27px 27px 53px #c2b1b8;
+    box-shadow: 27px 27px 53px #c2b1b8;
 }
 
 body {
@@ -86,7 +85,7 @@ body {
     margin-right: 50px;
 }
 
-a{
+a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -116,25 +115,73 @@ a{
     top: 50%;
     transform: skewX(30deg) translate(-150%, -50%);
     transition: all 0.5s;
-   }
-   
+}
+
 .btn:hover {
     background-color: #585858;
     color: #fff;
-   }
-   
+}
+
 .btn:hover::before {
     transform: skewX(30deg) translate(150%, -50%);
     transition-delay: 0.1s;
-   }
-   
+}
+
 .btn:active {
     transform: scale(0.9);
-   }
+}
 
-.flexbox{
+.flexbox {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    color: white;
+    box-shadow: 5px 5px 25px #000;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+        all 1s;
+
+    .moveup {
+        opacity: 1;
+        transform: translateY(200px);
+        transition:
+            opacity 0.5s 2s,
+            transform 0.5s 0.5s;
+    }
+
+    .movedown {
+        opacity: 0;
+        transform: translateY(500px);
+        transition:
+            opacity 0.5s 1s,
+            transform 0.5s 1s;
+    }
+
+    &:hover {
+        width: 300px;
+        background-color: orange;
+        box-shadow: -5px 5px 25px #000;
+
+        .box__blurb {
+            opacity: 0;
+            transform: translateX(-500px);
+        }
+
+        .rect__blurb {
+            opacity: 1;
+            transform: translateX(-100px);
+        }
+    }
 }

@@ -139,49 +139,74 @@ a {
 }
 
 .box {
+    background-color: #fbdd88;
+    height: 300px;
+    width: 27%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    color: white;
-    box-shadow: 5px 5px 25px #000;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
     overflow: hidden;
+    justify-content: center;
     white-space: nowrap;
     cursor: pointer;
+    position: relative;
     transition:
         all 1s;
 
-    .moveup {
-        opacity: 1;
-        transform: translateY(200px);
+    .moveleft {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin-left: 25px;
+        transform: translateY(0px);
         transition:
-            opacity 0.5s 2s,
-            transform 0.5s 0.5s;
+            transform 0.5s 0.25s;
+    }
+
+    .moveright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 66%;
+        transform: translateY(0px);
+        transition:
+            transform 0.5s 0.25s;
     }
 
     .movedown {
-        opacity: 0;
-        transform: translateY(500px);
+        transform: translateY(-200px);
         transition:
-            opacity 0.5s 1s,
-            transform 0.5s 1s;
+            transform 0.5s 0.25s;
     }
 
     &:hover {
-        width: 300px;
-        background-color: orange;
+        width: 29%;
+        background-color: #f5b8d2;
         box-shadow: -5px 5px 25px #000;
 
-        .box__blurb {
-            opacity: 0;
-            transform: translateX(-500px);
+        .moveleft {
+            transform: translateX(-300px);
         }
 
-        .rect__blurb {
-            opacity: 1;
-            transform: translateX(-100px);
+        .moveright {
+            transform: translateX(300px);
+        }
+
+        .movedown {
+        
+            transform: translateY(0px);
         }
     }
+}
+
+.overlap1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }

@@ -35,6 +35,67 @@
                 </div>
             </div>
         </div>
+
+        <div class="card2">
+            
+                    <img class="corner" src="/imgs/character_icons/Character_Seele_Icon.webp">
+                    <p>whatever im gonna put stuff here</p>
+            <div class="broken">
+                <button class="tablink" onclick="openCity('Auto', this, 'red')" id="defaultOpen">London</button>
+                <button class="tablink" onclick="openCity('Skill', this, 'green')">Paris</button>
+                <button class="tablink" onclick="openCity('Ultimate', this, 'blue')">Tokyo</button>
+                <button class="tablink" onclick="openCity('Technique', this, 'orange')">Oslo</button>
+                <button class="tablink" onclick="openCity('Talent', this, 'orange')">Oslo</button>
+            </div>
+            <div id="Auto" class="tabcontent">
+                <h1>Auto</h1>
+                <p>attack</p>
+            </div>
+            <div id="Skill" class="tabcontent">
+                <h1>Skill</h1>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Ultimate" class="tabcontent">
+                <h1>Ultimate</h1>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Technique" class="tabcontent">
+                <h1>Technique</h1>
+                <p>Oslo is the capital of Norway.</p>
+            </div>
+            <div id="Talent" class="tabcontent">
+                <h1>Talent</h1>
+                <p>Oslo is the capital of Norway.</p>
+            </div>
+
+            <script>
+                function openCity(cityName, elmnt, color) {
+                    // Hide all elements with class="tabcontent" by default */
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Remove the background color of all tablinks/buttons
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].style.backgroundColor = "";
+                    }
+
+                    // Show the specific tab content
+                    document.getElementById(cityName).style.display = "block";
+
+                    // Add the specific color to the button used to open the tab content
+                    elmnt.style.backgroundColor = color;
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
     </div>
 </body>
 

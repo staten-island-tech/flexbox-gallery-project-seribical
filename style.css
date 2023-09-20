@@ -135,3 +135,60 @@ a {
     margin-bottom: 10px;
 }
 
+
+.card2{
+    background-image: linear-gradient(#fddd73, #ffb158);
+    width:27%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-direction: column;
+}
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Style each tab content individually */
+
+
+  .broken{
+    width:100%;
+  }
+
+  .corner{
+    position: absolute;
+  }

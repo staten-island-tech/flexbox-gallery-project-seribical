@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Railing Comp Sci</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/x-icon" href="/browserhead.webp" />
+    <link rel="icon" type="images/x-icon" href="/imgs/misc/browserhead.webp" />
 </head>
 
 <body>
     <h1>Star Rail Shenanigans</h1>
     <div class="flexbox">
-        <div class="gradientbg">
-            <div class="card">
+        <div class="gradientbgg">
+            <div class="cardq">
                 <div class="overlap">
                     <div class="moveleft">
                         <img src="/imgs/character_spash/Character_Seele_Splash_Art.webp" width="100%">
@@ -46,11 +46,12 @@
                     </div>
                     <div class="bro">
                         <div class="abilities">
-                            <button class="tablink" onclick="txt('Auto', this, '#4d36b3')" id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt('Auto', this, '#4d36b3')"
+                                id="defaultOpen">Auto</button>
                             <button class="tablink" onclick="txt('Skill', this, '#4d36b3')">Skill</button>
                             <button class="tablink" onclick="txt('Ultimate', this, '#4d36b3')">Ultimate</button>
-                            <button class="tablink" onclick="txt('Technique', this, '#4d36b3')">Technique</button>
                             <button class="tablink" onclick="txt('Talent', this, '#4d36b3')">Talent</button>
+                            <button class="tablink" onclick="txt('Technique', this, '#4d36b3')">Technique</button>
                         </div>
                         <div id="Auto" class="tabcontent">
                             <div class="half">
@@ -61,55 +62,62 @@
                                 <video width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Thwack_Preview.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                             </div>
                         </div>
                         <div id="Skill" class="tabcontent">
                             <div class="half">
                                 <h3>Sheathed Blade</h3>
-                                <p>Increases Seele's SPD by 25% for 2 turn(s) and deals Quantum DMG equal to 110/220/242% of Seele's ATK to a single enemy.</p>
+                                <p>Increases Seele's SPD by 25% for 2 turn(s) and deals Quantum DMG equal to
+                                    110/220/242% of Seele's ATK to a single enemy.</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Sheathed_Blade_Preview.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                             </div>
                         </div>
                         <div id="Ultimate" class="tabcontent">
                             <div class="half">
                                 <h3>Butterfly Flurry</h3>
-                                <p>Seele enters the buffed state and deals Quantum DMG equal to 255/425/459% of Seele's ATK to a single enemy.</p>
+                                <p>Seele enters the buffed state and deals Quantum DMG equal to 255/425/459% of Seele's
+                                    ATK to a single enemy.</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Butterfly_Flurry_Preview.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                             </div>
                         </div>
-                        <div id="Technique" class="tabcontent">
+                        <div id="Talent" class="tabcontent">
                             <div class="half">
                                 <h3>Resurgence</h3>
-                                <p class="font10">Enters the buffed state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an extra turn. While in the buffed state, the DMG of Seele's attacks increases by 40/80/88% for 1 turn(s). Enemies defeated in the extra turn provided by "Resurgence" will not trigger another "Resurgence."</p>
+                                <p id="font10">Enters the buffed state upon defeating an enemy with Basic ATK, Skill,
+                                    or Ultimate, and receives an extra turn. While in the buffed state, the DMG of
+                                    Seele's attacks increases by 40/80/88% for 1 turn(s). Enemies defeated in the extra
+                                    turn provided by "Resurgence" will not trigger another "Resurgence."</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Resurgence_Preview.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                             </div>
                         </div>
-                        <div id="Talent" class="tabcontent">
+                        <div id="Technique" class="tabcontent">
                             <div class="half">
                                 <h3>Phantom Illusion</h3>
-                                <p class="font12">After using her Technique, Seele gains Stealth for 20 second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.</p>
+                                <p id="font12">After using her Technique, Seele gains Stealth for 20 second(s). While
+                                    Stealth is active, Seele cannot be detected by enemies. And when entering battle by
+                                    attacking enemies, Seele will immediately enter the buffed state.</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Phantom_Illusion_Preview_2.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -141,64 +149,427 @@
                 </div>
             </div>
         </div>
+        <div class="gradientbgg">
+            <div class="cardl">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Jing_Yuan_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Jing Yuan</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Erudition.webp" width="15%">
+                            <p class="inline">Erudition</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Lightning.webp" width="15%">
+                            <p class="inline">Lightning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Jing_Yuan_Icon.webp" width="45%">
+                            <p class="inline">Jing Yuan</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Erudition.webp" width="15%">
+                            <p class="inline">Erudition</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Lightning.webp" width="15%">
+                            <p class="inline">Lightning</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt1('Auto1', this, '#8b39d8')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt1('Skill1', this, '#8532d3')">Skill</button>
+                            <button class="tablink" onclick="txt1('Ultimate1', this, '#8532d3')">Ultimate</button>
+                            <button class="tablink" onclick="txt1('Talent1', this, '#8532d3')">Talent</button>
+                            <button class="tablink" onclick="txt1('Technique1', this, '#8532d3')">Technique</button>
+                        </div>
+                        <div id="Auto1" class="tabcontent">
+                            <div class="half">
+                                <h3>Glistening Light</h3>
+                                <p>Jing Yuan deals Lightning DMG equal to 50/100/110% of his ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Glistening_Light_Preview.ogg"
+                                        type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Skill1" class="tabcontent">
+                            <div class="half">
+                                <h3>Rifting Zenith</h3>
+                                <p id="font14">Deals Lightning DMG equal to 50/100/110% of Jing Yuan's ATK to all
+                                    enemies and increases Lightning-Lord's Hits Per Action by 2 for the next turn.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Rifting_Zenith_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Ultimate1" class="tabcontent">
+                            <div class="half">
+                                <h3>Lightbringer</h3>
+                                <p id="font14">Deals Lightning DMG equal to 120/200/216% of Jing Yuan's ATK to all
+                                    enemies and increases Lightning-Lord's Hits Per Action by 3 for the next turn.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Lightbringer_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Talent1" class="tabcontent">
+                            <div class="half">
+                                <h3>Prana Extirpated</h3>
+                                <p id="font6">Summons Lightning-Lord at the start of the battle. Lightning-Lord has
+                                    60 base SPD and 3 base Hits Per Action. When the Lightning-Lord takes action, its
+                                    hits are considered as follow-up attacks, with each hit dealing Lightning DMG equal
+                                    to 33/66/70% of Jing Yuan's ATK to a single enemy, and enemies adjacent to it also
+                                    receive Lightning DMG equal to 25% of the DMG dealt to the target enemy.
 
-        <div class="card2">
-            <div class="desc">
-                <img src="/imgs/character_icons/Character_Seele_Icon.webp" width="100%">
-                <p class="inline">Seele</p>
-            </div>
-            <div class="broken">
-                <button class="tablink" onclick="txt('Auto', this, '#4d36b3')" id="defaultOpen">London</button>
-                <button class="tablink" onclick="txt('Skill', this, '#4d36b3')">Paris</button>
-                <button class="tablink" onclick="txt('Ultimate', this, '#4d36b3')">Tokyo</button>
-                <button class="tablink" onclick="txt('Technique', this, '#4d36b3')">Oslo</button>
-                <button class="tablink" onclick="txt('Talent', this, '#4d36b3')">Oslo</button>
-            </div>
-            <div id="Auto" class="tabcontent">
-                <h1>Auto</h1>
-                <p>attack</p>
-            </div>
-            <div id="Skill" class="tabcontent">
-                <h1>Skill</h1>
-                <p>Paris is the capital of France.</p>
-            </div>
-            <div id="Ultimate" class="tabcontent">
-                <h1>Ultimate</h1>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-            <div id="Technique" class="tabcontent">
-                <h1>Technique</h1>
-                <p>Oslo is the capital of Norway.</p>
-            </div>
-            <div id="Talent" class="tabcontent">
-                <h1>Talent</h1>
-                <p>Oslo is the capital of Norway.</p>
-            </div>
-            <script> //i stole this from w3schools*/
-                function txt(cityName, elmnt, color) {
-                    // Hide all elements with class="tabcontent" by default */
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                                    The Lightning-Lord's Hits Per Action can reach a max of 10. Every time
+                                    Lightning-Lord's Hits Per Action increases by 1, its SPD increases by 10. After the
+                                    Lightning-Lord's action ends, its SPD and Hits Per Action return to their base
+                                    values.
 
-                    // Remove the background color of all tablinks/buttons
-                    tablinks = document.getElementsByClassName("tablink");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].style.backgroundColor = "";
-                    }
+                                    When Jing Yuan is knocked down, the Lightning-Lord will disappear. When Jing Yuan is
+                                    affected by Crowd Control debuff, the Lightning-Lord is unable to take action.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Prana_Extirpated_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Technique1" class="tabcontent">
+                            <div class="half">
+                                <h3>Spirit Invocation</h3>
+                                <p>After using Jing Yuan's Technique, at the start of the next battle, Lightning-Lord's Hits Per Action in the first turn increases by 3.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Spirit_Invocation_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt1(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
 
-                    // Show the specific tab content
-                    document.getElementById(cityName).style.display = "block";
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
 
-                    // Add the specific color to the button used to open the tab content
-                    elmnt.style.backgroundColor = color;
-                }
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-            </script>
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgp">
+            <div class="cardp">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Sushang_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Sushang</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_The_Hunt.webp" width="15%">
+                            <p class="inline">The Hunt</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Physical.webp" width="15%">
+                            <p class="inline">Physical</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Sushang_Icon.webp" width="45%">
+                            <p class="inline">Sushang</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_The_Hunt.webp" width="15%">
+                            <p class="inline">The Hunt</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Physical.webp" width="15%">
+                            <p class="inline">Physical</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt2('Auto2', this, '#9c9c9c')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt2('Skill2', this, '#9c9c9c')">Skill</button>
+                            <button class="tablink" onclick="txt2('Ultimate2', this, '#9c9c9c')">Ultimate</button>
+                            <button class="tablink" onclick="txt2('Talent2', this, '#9c9c9c')">Talent</button>
+                            <button class="tablink" onclick="txt2('Technique2', this, '#9c9c9c')">Technique</button>
+                        </div>
+                        <div id="Auto2" class="tabcontent">
+                            <div class="half">
+                                <h3>Cloudfencer Art: Starshine</h3>
+                                <p>Deals Physical DMG equal to 50/100/110% of Sushang's ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill2" class="tabcontent">
+                            <div class="half">
+                                <h3>Cloudfencer Art: Mountainfall</h3>
+                                <p id="font9">Deals Physical DMG equal to 105/210/231% of Sushang's ATK to a single enemy. In addition, there is a 33% chance to trigger Sword Stance on the final hit, dealing Additional Physical DMG equal to 50/100/110% of Sushang's ATK to the enemy. If the enemy is inflicted with Weakness Break, Sword Stance is guaranteed to trigger.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate2" class="tabcontent">
+                            <div class="half">
+                                <h3>Shape of Taixu: Dawn Herald</h3>
+                                <p id="font9">Deals Physical DMG equal to 192/320/346% of Sushang's ATK to a single enemy and immediately Advances her action forward by 100%. In addition, Sushang's ATK increases by 18/30/32% and using her Skill has 2 extra chances to trigger Sword Stance for 2 turn(s). Sword Stance triggered from the extra chances deals 50% of the original DMG.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent2" class="tabcontent">
+                            <div class="half">
+                                <h3>Dancing Blade</h3>
+                                <p>When an enemy has their Weakness Broken on the field, Sushang's SPD increases by 15/20/21% for 2 turn(s).</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique2" class="tabcontent">
+                            <div class="half">
+                                <h3>Cloudfencer Art: Warcry</h3>
+                                <p>Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to 80% of her ATK to all enemies.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt2(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgg">
+            <div class="cardw">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Blade_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Blade</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Destruction.webp" width="15%">
+                            <p class="inline">Destruction</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Wind.webp" width="15%">
+                            <p class="inline">Wind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Jing_Yuan_Icon.webp" width="45%">
+                            <p class="inline">Jing Yuan</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Erudition.webp" width="15%">
+                            <p class="inline">Erudition</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Lightning.webp" width="15%">
+                            <p class="inline">Lightning</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt3('Auto3', this, '#8b39d8')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt3('Enhance3', this, '#8532d3')">Enhanced</button>
+                            <button class="tablink" onclick="txt3('Skill3', this, '#8532d3')">Skill</button>
+                            <button class="tablink" onclick="txt3('Ultimate3', this, '#8532d3')">Ultimate</button>
+                            <button class="tablink" onclick="txt3('Talent3', this, '#8532d3')">Talent</button>
+                            <button class="tablink" onclick="txt3('Technique3', this, '#8532d3')">Technique</button>
+                        </div>
+                        <div id="Auto3" class="tabcontent">
+                            <div class="half">
+                                <h3>Glistening Light</h3>
+                                <p>Jing Yuan deals Lightning DMG equal to 50/100/110% of his ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Glistening_Light_Preview.ogg"
+                                        type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Enhance3" class="tabcontent">
+                            <div class="half">
+                                <h3>Glistening Ligdddht</h3>
+                                <p>Jing Yuan deals Lightning DMG equal to 50/100/110% of his ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Glistening_Light_Preview.ogg"
+                                        type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Skill3" class="tabcontent">
+                            <div class="half">
+                                <h3>Rifting Zenith</h3>
+                                <p id="font14">Deals Lightning DMG equal to 50/100/110% of Jing Yuan's ATK to all
+                                    enemies and increases Lightning-Lord's Hits Per Action by 2 for the next turn.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Rifting_Zenith_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Ultimate3" class="tabcontent">
+                            <div class="half">
+                                <h3>Lightbringer</h3>
+                                <p id="font14">Deals Lightning DMG equal to 120/200/216% of Jing Yuan's ATK to all
+                                    enemies and increases Lightning-Lord's Hits Per Action by 3 for the next turn.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Lightbringer_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Talent3" class="tabcontent">
+                            <div class="half">
+                                <h3>Prana Extirpated</h3>
+                                <p id="font6">Summons Lightning-Lord at the start of the battle. Lightning-Lord has
+                                    60 base SPD and 3 base Hits Per Action. When the Lightning-Lord takes action, its
+                                    hits are considered as follow-up attacks, with each hit dealing Lightning DMG equal
+                                    to 33/66/70% of Jing Yuan's ATK to a single enemy, and enemies adjacent to it also
+                                    receive Lightning DMG equal to 25% of the DMG dealt to the target enemy.
+
+                                    The Lightning-Lord's Hits Per Action can reach a max of 10. Every time
+                                    Lightning-Lord's Hits Per Action increases by 1, its SPD increases by 10. After the
+                                    Lightning-Lord's action ends, its SPD and Hits Per Action return to their base
+                                    values.
+
+                                    When Jing Yuan is knocked down, the Lightning-Lord will disappear. When Jing Yuan is
+                                    affected by Crowd Control debuff, the Lightning-Lord is unable to take action.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Prana_Extirpated_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div id="Technique3" class="tabcontent">
+                            <div class="half">
+                                <h3>Spirit Invocation</h3>
+                                <p>After using Jing Yuan's Technique, at the start of the next battle, Lightning-Lord's Hits Per Action in the first turn increases by 3.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/jing_yuan_skills/Spirit_Invocation_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt3(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
         </div>
     </div>
 </body>

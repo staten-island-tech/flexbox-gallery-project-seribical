@@ -27,11 +27,12 @@ a {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    flex-wrap: wrap;
 }
 
-.gradientbg{
+.gradientbgg {
     background-image: linear-gradient(#fddd73, #ffb158);
-    width:27%;
+    width: 27%;
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -50,14 +51,33 @@ a {
     transition: all 0.9s 0.1s;
 }
 
-.gradientbg:hover{
-    width:29%;
+.gradientbgp {
+    background-image: linear-gradient(#b181ff, #9645ff);
+    width: 27%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgg:hover, .gradientbgp:hover{
+    width: 29%;
     height: 305px;
 }
 
-
-
-.card {
+.cardq {
     height: 100%;
     width: 100%;
     display: flex;
@@ -119,13 +139,217 @@ a {
         }
 
         .movedown {
-        
+
             transform: translateY(0px);
         }
     }
 }
 
-.overlap{
+.cardw {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    overflow: hidden;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: wrap;
+    transition:
+        all 1s;
+
+    .moveleft {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin-left: 25px;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .moveright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 66%;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .movedown {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        flex-direction: column;
+        transform: translateY(-400px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    &:hover {
+        background-color: #56bd64;
+        box-shadow: -5px 5px 25px #000;
+
+        .moveleft {
+            transform: translateX(-300px);
+        }
+
+        .moveright {
+            transform: translateX(300px);
+        }
+
+        .movedown {
+
+            transform: translateY(0px);
+        }
+    }
+}
+
+.cardl {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    overflow: hidden;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: wrap;
+    transition:
+        all 1s;
+
+    .moveleft {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin-left: 25px;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .moveright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 66%;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .movedown {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        flex-direction: column;
+        transform: translateY(-400px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    &:hover {
+        background-color: #9d4aeb;
+        box-shadow: -5px 5px 25px #000;
+
+        .moveleft {
+            transform: translateX(-300px);
+        }
+
+        .moveright {
+            transform: translateX(300px);
+        }
+
+        .movedown {
+
+            transform: translateY(0px);
+        }
+    }
+}
+
+.cardp {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    overflow: hidden;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: wrap;
+    transition:
+        all 1s;
+
+    .moveleft {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin-left: 25px;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .moveright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 66%;
+        transform: translateX(0px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    .movedown {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        flex-direction: column;
+        transform: translateY(-400px);
+        transition:
+            transform 0.5s 0.25s;
+    }
+
+    &:hover {
+        background-color: #c9c9c9;
+        box-shadow: -5px 5px 25px #000;
+
+        .moveleft {
+            transform: translateX(-300px);
+        }
+
+        .moveright {
+            transform: translateX(300px);
+        }
+
+        .movedown {
+
+            transform: translateY(0px);
+        }
+    }
+}
+
+.overlap {
     position: absolute;
     display: flex;
     align-items: center;
@@ -133,7 +357,7 @@ a {
     justify-content: space-between;
 }
 
-.txt{
+.txt {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -141,34 +365,14 @@ a {
     margin-bottom: 10px;
 }
 
-.txt2{
+.txt2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-
-.card2{
-    background-image: linear-gradient(#fddd73, #ffb158);
-    width:27%;
-    height: 300px;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    display: flex;
-    margin: 25px 0;
-    border-radius: 20px;
-    transition: all 0.3s;
-    text-decoration: none;
-    text-decoration-color: none;
-    justify-content: center;
-    white-space: nowrap;
-    cursor: pointer;
-    flex-direction: column;
-}
-/* Style the tab buttons */
 .tablink {
-    background-color: #5d3fe2;
+    background-color: rgba(255,255,255,0);
     color: white;
     float: left;
     border: none;
@@ -177,69 +381,100 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 17px;
-    width: 20%;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tablink:hover {
-    background-color: #543acc;
-  }
-  
-  /* Set default styles for tab content */
-  .tabcontent {
+    width: auto;
+}
+
+.tablink:hover{
+    background-color: #bdbdbd;
+}
+   
+
+.tabcontent {
     color: white;
     display: flex;
     text-align: center;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-  }
-  
-  /* Style each tab content individually */
+}
 
-  .abilities{
-    width:100%;
-  }
+.abilities {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-  .corner{
+.corner {
     position: absolute;
-  }
+}
 
-  .desc{
+.desc {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 25px;
-  }
+}
 
-  .bro{
+.bro {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .half{
+.half {
     width: 49%;
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .wrap{
+.wrap {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
-  p{
+p {
     white-space: normal;
-  }
+}
 
-  .font10{
+#font6 {
+    font-size: 6px;
+}
+
+#font7 {
+    font-size: 7px;
+}
+
+#font8 {
+    font-size: 8px;
+}
+
+#font9 {
+    font-size: 9px;
+}
+
+#font10 {
     font-size: 10px;
-  }
+}
 
-  .font12{
+#font11 {
+    font-size: 11px;
+}
+
+#font12 {
     font-size: 12px;
-  }
+}
+
+#font13 {
+    font-size: 13px;
+}
+
+#font14 {
+    font-size: 14px;
+}
+
+#font15 {
+    font-size: 15px;
+}

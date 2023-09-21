@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ifucking hatethis class bro</title>
+    <title>Star Railing Comp Sci</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="images/x-icon" href="hellno.png" />
+    <link rel="icon" type="images/x-icon" href="/browserhead.webp" />
 </head>
 
 <body>
-    <h1>ggguguh</h1>
+    <h1>Star Rail Shenanigans</h1>
     <div class="flexbox">
         <div class="gradientbg">
             <div class="card">
@@ -30,22 +30,129 @@
                     </div>
                 </div>
                 <div class="movedown">
-                    <p>whatever im gonna put stuff here</p>
-                    <img src="/imgs/character_icons/Character_Seele_Icon.webp">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Seele_Icon.webp" width="45%">
+                            <p class="inline">Seele</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_The_Hunt.webp" width="15%">
+                            <p class="inline">The Hunt</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Quantum.webp" width="15%">
+                            <p class="inline">Quantum</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt('Auto', this, '#4d36b3')" id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt('Skill', this, '#4d36b3')">Skill</button>
+                            <button class="tablink" onclick="txt('Ultimate', this, '#4d36b3')">Ultimate</button>
+                            <button class="tablink" onclick="txt('Technique', this, '#4d36b3')">Technique</button>
+                            <button class="tablink" onclick="txt('Talent', this, '#4d36b3')">Talent</button>
+                        </div>
+                        <div id="Auto" class="tabcontent">
+                            <div class="half">
+                                <h3>Thwack</h3>
+                                <p>Deals Quantum DMG equal to 50/100/110% of Seele's ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/seele_skills/Thwack_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                        <div id="Skill" class="tabcontent">
+                            <div class="half">
+                                <h3>Sheathed Blade</h3>
+                                <p>Increases Seele's SPD by 25% for 2 turn(s) and deals Quantum DMG equal to 110/220/242% of Seele's ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/seele_skills/Sheathed_Blade_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                        <div id="Ultimate" class="tabcontent">
+                            <div class="half">
+                                <h3>Butterfly Flurry</h3>
+                                <p>Seele enters the buffed state and deals Quantum DMG equal to 255/425/459% of Seele's ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/seele_skills/Butterfly_Flurry_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                        <div id="Technique" class="tabcontent">
+                            <div class="half">
+                                <h3>Resurgence</h3>
+                                <p class="font10">Enters the buffed state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an extra turn. While in the buffed state, the DMG of Seele's attacks increases by 40/80/88% for 1 turn(s). Enemies defeated in the extra turn provided by "Resurgence" will not trigger another "Resurgence."</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/seele_skills/Resurgence_Preview.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                        <div id="Talent" class="tabcontent">
+                            <div class="half">
+                                <h3>Phantom Illusion</h3>
+                                <p class="font12">After using her Technique, Seele gains Stealth for 20 second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.</p>
+                            </div>
+                            <div class="half">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/seele_skills/Phantom_Illusion_Preview_2.ogg" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
                 </div>
             </div>
         </div>
 
         <div class="card2">
-            
-                    <img class="corner" src="/imgs/character_icons/Character_Seele_Icon.webp">
-                    <p>whatever im gonna put stuff here</p>
+            <div class="desc">
+                <img src="/imgs/character_icons/Character_Seele_Icon.webp" width="100%">
+                <p class="inline">Seele</p>
+            </div>
             <div class="broken">
-                <button class="tablink" onclick="openCity('Auto', this, 'red')" id="defaultOpen">London</button>
-                <button class="tablink" onclick="openCity('Skill', this, 'green')">Paris</button>
-                <button class="tablink" onclick="openCity('Ultimate', this, 'blue')">Tokyo</button>
-                <button class="tablink" onclick="openCity('Technique', this, 'orange')">Oslo</button>
-                <button class="tablink" onclick="openCity('Talent', this, 'orange')">Oslo</button>
+                <button class="tablink" onclick="txt('Auto', this, '#4d36b3')" id="defaultOpen">London</button>
+                <button class="tablink" onclick="txt('Skill', this, '#4d36b3')">Paris</button>
+                <button class="tablink" onclick="txt('Ultimate', this, '#4d36b3')">Tokyo</button>
+                <button class="tablink" onclick="txt('Technique', this, '#4d36b3')">Oslo</button>
+                <button class="tablink" onclick="txt('Talent', this, '#4d36b3')">Oslo</button>
             </div>
             <div id="Auto" class="tabcontent">
                 <h1>Auto</h1>
@@ -55,12 +162,10 @@
                 <h1>Skill</h1>
                 <p>Paris is the capital of France.</p>
             </div>
-
             <div id="Ultimate" class="tabcontent">
                 <h1>Ultimate</h1>
                 <p>Tokyo is the capital of Japan.</p>
             </div>
-
             <div id="Technique" class="tabcontent">
                 <h1>Technique</h1>
                 <p>Oslo is the capital of Norway.</p>
@@ -69,9 +174,8 @@
                 <h1>Talent</h1>
                 <p>Oslo is the capital of Norway.</p>
             </div>
-
-            <script>
-                function openCity(cityName, elmnt, color) {
+            <script> //i stole this from w3schools*/
+                function txt(cityName, elmnt, color) {
                     // Hide all elements with class="tabcontent" by default */
                     var i, tabcontent, tablinks;
                     tabcontent = document.getElementsByClassName("tabcontent");

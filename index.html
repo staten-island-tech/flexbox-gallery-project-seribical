@@ -194,7 +194,7 @@
                         <div id="Auto1" class="tabcontent">
                             <div class="half">
                                 <h3>Glistening Light</h3>
-                                <p>Deals Lightning DMG equal to 50/100/110% of his ATK to a single enemy.</p>
+                                <p>Deals Lightning DMG equal to 50/100/110% of Jing Yuan's ATK to a single enemy.</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
@@ -346,7 +346,11 @@
                                 <p>Deals Physical DMG equal to 50/100/110% of Sushang's ATK to a single enemy.</p>
                             </div>
                             <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/sushang_skills/Cloudfencer_Art_Starshine_Preview.mp4"
+                                        type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                         <div id="Skill2" class="tabcontent">
@@ -359,7 +363,11 @@
                                     trigger.</p>
                             </div>
                             <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/sushang_skills/Cloudfencer_Art_Mountainfall_Preview.mp4"
+                                        type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                         <div id="Ultimate2" class="tabcontent">
@@ -372,7 +380,11 @@
                                     original DMG.</p>
                             </div>
                             <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/sushang_skills/Shape_Of_Taixu_Dawn_Herald_Preview.mp4"
+                                        type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                         <div id="Talent2" class="tabcontent">
@@ -382,7 +394,7 @@
                                     15/20/21% for 2 turn(s).</p>
                             </div>
                             <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
+                                <img src="/imgs/misc/Sushang_Sticker.webp" width="50%">
                             </div>
                         </div>
                         <div id="Technique2" class="tabcontent">
@@ -392,7 +404,11 @@
                                     to 80% of her ATK to all enemies.</p>
                             </div>
                             <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
+                                <video width="100%" autoplay loop muted>
+                                    <source src="/vids/sushang_skills/Cloudfencer_Art_Warcry_Preview.mp4"
+                                        type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -470,7 +486,7 @@
                         <div id="Auto3" class="tabcontent">
                             <div class="half">
                                 <h3>Shard Sword</h3>
-                                <p>Deals Wind DMG equal to 50/100/110% of his ATK to a single enemy.</p>
+                                <p>Deals Wind DMG equal to 50/100/110% of Blade's ATK to a single enemy.</p>
                             </div>
                             <div class="half">
                                 <video width="100%" autoplay loop muted>
@@ -839,6 +855,135 @@
                     </div>
                     <script> //i stole this from w3schools*/
                         function txt5(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgp">
+            <div class="cardim">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Yukong_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Yukong</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Harmony.webp" width="15%">
+                            <p class="inline">Harmony</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Imaginary.webp" width="15%">
+                            <p class="inline">Imaginary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Yukong_Icon.webp" width="45%">
+                            <p class="inline">Yukong</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Harmony.webp" width="15%">
+                            <p class="inline">Harmony</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Imaginary.webp" width="15%">
+                            <p class="inline">Imaginary</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt6('Auto6', this, '#c5af33')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt6('Skill6', this, '#c5af33')">Skill</button>
+                            <button class="tablink" onclick="txt6('Ultimate6', this, '#c5af33')">Ultimate</button>
+                            <button class="tablink" onclick="txt6('Talent6', this, '#c5af33')">Talent</button>
+                            <button class="tablink" onclick="txt6('Technique6', this, '#c5af33')">Technique</button>
+                        </div>
+                        <div id="Auto6" class="tabcontent">
+                            <div class="half">
+                                <h3>Arrowslinger</h3>
+                                <p>Deals 50/100/110% of Yukong's ATK as Imaginary DMG to a target enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill6" class="tabcontent">
+                            <div class="half">
+                                <h3>Emboldening Salvo</h3>
+                                <p id="font10">Obtains 2 stack(s) of "Roaring Bowstrings" (to a maximum of 2 stacks). When "Roaring
+                                    Bowstrings" is active, the ATK of all allies increases by 40/80/88%, and every time
+                                    an ally's turn ends, Yukong loses 1 stack of "Roaring Bowstrings." When it's the
+                                    turn where Yukong gains "Roaring Bowstrings" by using Skill, "Roaring Bowstrings"
+                                    will not be removed.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate6" class="tabcontent">
+                            <div class="half">
+                                <h3>Diving Kestrel</h3>
+                                <p id="font11">If "Roaring Bowstrings" is active on Yukong when her Ultimate is used,
+                                    additionally increases all allies' CRIT Rate by 21/28/29.4% and CRIT DMG by
+                                    39/65/70.2%. At the same time, deals Imaginary DMG equal to 228/380/410% of Yukong's
+                                    ATK to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent6" class="tabcontent">
+                            <div class="half">
+                                <h3>Seven Layers, One Arrow</h3>
+                                <p id="font12">Basic ATK additionally deals Imaginary DMG equal to 40/80/88% of Yukong's
+                                    ATK, and increases the Toughness-Reducing DMG of this attack by 100%. This effect
+                                    can be triggered again in 1 turn(s).</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique6" class="tabcontent">
+                            <div class="half">
+                                <h3>Chasing the Wind</h3>
+                                <p id="font12">After using her Technique, Yukong enters Sprint mode for 20 seconds. In
+                                    Sprint mode, her Movement SPD increases by 35%, and Yukong gains 2 stack(s) of
+                                    "Roaring Bowstrings" when she enters battle by attacking enemies.
+
+                                </p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt6(cityName, elmnt, color) {
                             // Hide all elements with class="tabcontent" by default */
                             var i, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");

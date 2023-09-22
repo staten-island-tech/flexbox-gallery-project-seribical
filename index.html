@@ -935,7 +935,8 @@
                         <div id="Skill6" class="tabcontent">
                             <div class="half">
                                 <h3>Emboldening Salvo</h3>
-                                <p id="font10">Obtains 2 stack(s) of "Roaring Bowstrings" (to a maximum of 2 stacks). When "Roaring
+                                <p id="font10">Obtains 2 stack(s) of "Roaring Bowstrings" (to a maximum of 2 stacks).
+                                    When "Roaring
                                     Bowstrings" is active, the ATK of all allies increases by 40/80/88%, and every time
                                     an ally's turn ends, Yukong loses 1 stack of "Roaring Bowstrings." When it's the
                                     turn where Yukong gains "Roaring Bowstrings" by using Skill, "Roaring Bowstrings"
@@ -984,6 +985,272 @@
                     </div>
                     <script> //i stole this from w3schools*/
                         function txt6(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgp">
+            <div class="cardq">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Qingque_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Qingque</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Erudition.webp" width="15%">
+                            <p class="inline">Erudition</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Quantum.webp" width="15%">
+                            <p class="inline">Quantum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Qingque_Icon.webp" width="45%">
+                            <p class="inline">Qingque</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Erudition.webp" width="15%">
+                            <p class="inline">Erudition</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Quantum.webp" width="15%">
+                            <p class="inline">Quantum</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt7('Auto7', this, '#4d36b3')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt7('Enhanced7', this, '#4d36b3')">Enhanced</button>
+                            <button class="tablink" onclick="txt7('Skill7', this, '#4d36b3')">Skill</button>
+                            <button class="tablink" onclick="txt7('Ultimate7', this, '#4d36b3')">Ultimate</button>
+                            <button class="tablink" onclick="txt7('Talent7', this, '#4d36b3')">Talent</button>
+                            <button class="tablink" onclick="txt7('Technique7', this, '#4d36b3')">Technique</button>
+                        </div>
+                        <div id="Auto7" class="tabcontent">
+                            <div class="half">
+                                <h3>Flower Pick</h3>
+                                <p>Deals 50/100/110% of Qingque's ATK as Quantum DMG to a target enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Enhanced7" class="tabcontent">
+                            <div class="half">
+                                <h3>Cherry on Top!</h3>
+                                <p id="font12">Deals Quantum DMG equal to 120/240/264% of Qingque's ATK to a single
+                                    enemy, and deals Quantum DMG equal to 50/100/110% of Qingque's ATK to enemies
+                                    adjacent to it. "Cherry on Top!" cannot recover Skill Points.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill7" class="tabcontent">
+                            <div class="half">
+                                <h3>A Scoop of Moon</h3>
+                                <p id="font14">Immediately draws 2 jade tile(s) and increases DMG by 14/28/30% until the
+                                    end of the current turn. This effect can stack up to 4 time(s). The turn will not
+                                    end after this Skill is used.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate7" class="tabcontent">
+                            <div class="half">
+                                <h3>A Quartet? Woo-hoo!</h3>
+                                <p>Deals Quantum DMG equal to 120/200/216% of Qingque's ATK to all enemies, and obtain 4
+                                    jade tiles of the same suit.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent7" class="tabcontent">
+                            <div class="half">
+                                <h3>Celestial Jade</h3>
+                                <p id="font8">When an ally's turn starts, Qingque randomly draws 1 tile from 3 different
+                                    suits and can hold up to 4 tiles at one time. If Qingque starts her turn with 4
+                                    tiles of the same suit, she consumes all tiles to enter the "Hidden Hand" state.
+                                    While in this state, Qingque cannot use her Skill again. At the same time, Qingque's
+                                    ATK increases by 36/72/79%, and her Basic ATK "Flower Pick" is enhanced, becoming
+                                    "Cherry on Top!" The "Hidden Hand" state ends after using "Cherry on Top!".</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique7" class="tabcontent">
+                            <div class="half">
+                                <h3>Game Solitaire</h3>
+                                <p>After using Technique, Qingque draws 2 jade tile(s) when the battle starts.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt7(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgg">
+            <div class="cardf">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Topaz_&_Numby_Splash_Art.webp.png" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Topaz & Numby</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_The_Hunt.webp" width="15%">
+                            <p class="inline">The Hunt</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Fire.webp" width="15%">
+                            <p class="inline">Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Topaz_&_Numby_Icon.webp" width="35%">
+                            <p class="inline">Topaz & Numby</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_The_Hunt.webp" width="15%">
+                            <p class="inline">The Hunt</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Fire.webp" width="15%">
+                            <p class="inline">Fire</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt8('Auto8', this, '#ce5252')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt8('Skill8', this, '#ce5252')">Skill</button>
+                            <button class="tablink" onclick="txt8('Ultimate8', this, '#ce5252')">Ultimate</button>
+                            <button class="tablink" onclick="txt8('Talent8', this, '#ce5252')">Talent</button>
+                            <button class="tablink" onclick="txt8('Technique8', this, '#ce5252')">Technique</button>
+                        </div>
+                        <div id="Auto8" class="tabcontent">
+                            <div class="half">
+                                <h3>Deficit...</h3>
+                                <p>Deals 50/100/110% of Topaz's ATK as Quantum DMG to a target enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill8" class="tabcontent">
+                            <div class="half">
+                                <h3>Difficulty Paying?</h3>
+                                <p id="font8">Causes a single target to enter the Proof of Debt state. Follow-up attacks
+                                    against enemy targets affected increases by 25/50/55%. Only one enemy target
+                                    can be affected by Proof of Debt at all times. When the current enemy target with
+                                    the Proof of Debt
+                                    dies, Topaz then applies Proof of Debt to a random enemy target on the field.
+
+                                    Numby deals Fire DMG equal to 75/150/165% of Topaz's ATK to the enemy target. This
+                                    counts as a follow-up attack.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate8" class="tabcontent">
+                            <div class="half">
+                                <h3>Turn a Profit!</h3>
+                                <p id="font12">Numby enters the Windfall Bonanza! state, increasing its SPD by 50%, CRIT
+                                    Damage by
+                                    12.5/25/27.5%, and Damage Multiplier by 75/150/165%. Windfall Bonanza! lasts 2 turns before wearing off.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent8" class="tabcontent">
+                            <div class="half">
+                                <h3>Pig Market?!</h3>
+                                <p id="font9">Summons Numby at the start of battle. Numby has a default speed of 80.
+                                    When it attacks or does a follow-up attack, deal Fire DMG equal to 75/150/165% of Topaz's ATK
+                                    to the enemy target with Proof of Debt. If there are no enemy targets with Proof of Debt
+                                    on the field, Topaz then applies Proof of Debt to a random enemy target.
+
+                                    When Topaz is down, Numby retreats.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique8" class="tabcontent">
+                            <div class="half">
+                                <h3>Explicit Subsidy</h3>
+                                <p>Numby finds treasure for you or something that shit is so long im not writing all of it.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt8(cityName, elmnt, color) {
                             // Hide all elements with class="tabcontent" by default */
                             var i, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");

@@ -643,6 +643,12 @@ p {
     white-space: normal;
 }
 
+#shoutout{
+    border-radius: 10px;
+    margin-top: 100px;
+    width:25%;
+}
+
 #font6 {
     font-size: 6px;
 }

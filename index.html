@@ -1415,7 +1415,8 @@
                         <div id="Technique9" class="tabcontent">
                             <div class="half">
                                 <h3>Mercy Is Not Forgiveness</h3>
-                                <p id="font12">Immediately attacks all enemies within a set range. After entering battle, deals
+                                <p id="font12">Immediately attacks all enemies within a set range. After entering
+                                    battle, deals
                                     Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to
                                     inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2
                                     turn(s).</p>
@@ -1475,7 +1476,7 @@
                     <div class="desc">
                         <div class="txt2">
                             <img src="/imgs/character_icons/Character_Asta_Icon.webp" width="35%">
-                            <p class="inline">Asta/p>
+                            <p class="inline">Asta</p>
                         </div>
                         <div class="txt2">
                             <img src="/imgs/path_icons/Path_Harmony.webp" width="15%">
@@ -1495,60 +1496,53 @@
                             <button class="tablink" onclick="txt10('Talent10', this, '#ce5252')">Talent</button>
                             <button class="tablink" onclick="txt10('Technique10', this, '#ce5252')">Technique</button>
                         </div>
-                        <div id="Auto9" class="tabcontent">
+                        <div id="Auto10" class="tabcontent">
                             <div class="half">
-                                <h3>Midnight Tumult</h3>
-                                <p>Deals 50/100/110% of Kafka's ATK as Lightning DMG to a target enemy.</p>
+                                <h3>Spectrum Beam</h3>
+                                <p>Deals 50/100/110% of Asta's ATK as Fire DMG to a target enemy.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
                             </div>
                         </div>
-                        <div id="Skill9" class="tabcontent">
+                        <div id="Skill10" class="tabcontent">
                             <div class="half">
-                                <h3>Caressing Moonlight</h3>
-                                <p id="font10">Deals Lightning DMG equal to 80/160/176% of Kafka's ATK to a target enemy
-                                    and Lightning DMG equal to 30/60/66% of Kafka's ATK to enemies adjacent to it. If
-                                    the target enemy is currently receiving DoT, all DoTs currently placed on that enemy
-                                    immediately produce DMG equal to 60/75/78% of their original DMG.</p>
+                                <h3>Meteor Storm</h3>
+                                <p id="font13">Deals Fire DMG equal to 25/50/55% of Asta's ATK to a single enemy and
+                                    further deals DMG for 4 extra times, with each time dealing Fire DMG equal to
+                                    25/50/55% of Asta's ATK to a random enemy.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
                             </div>
                         </div>
-                        <div id="Ultimate9" class="tabcontent">
+                        <div id="Ultimate10" class="tabcontent">
                             <div class="half">
-                                <h3>Twilight Trill</h3>
-                                <p id="font10">Deals Lightning DMG equal to 48/80/86% of Kafka's ATK to all enemies,
-                                    with a 100% base chance for enemies hit to become Shocked and immediately take DMG
-                                    equal to 80/100/104% of the DoT. Shock lasts for 2 turn(s). While Shocked, enemies
-                                    receive Lightning DoT equal to 116/290/318% of Kafka's ATK at the beginning of each
+                                <h3>Astral Blessing</h3>
+                                <p>Increases SPD of all allies by 36/50/53 for 2 turn(s).</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent10" class="tabcontent">
+                            <div class="half">
+                                <h3>Astrometry</h3>
+                                <p id="font10">Gains 1 stack of Charging for every different enemy hit by Asta plus an
+                                    extra stack if the enemy hit has Fire Weakness. For every stack of Charging Asta
+                                    has, all allies' ATK increases by 7/14/15%, up to 5 time(s). Starting from her
+                                    second turn, Asta's Charging stack count is reduced by 3 at the beginning of every
                                     turn.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
                             </div>
                         </div>
-                        <div id="Talent9" class="tabcontent">
+                        <div id="Technique10" class="tabcontent">
                             <div class="half">
-                                <h3>Gentle but Cruel</h3>
-                                <p id="font10">After an ally of Kafka's uses Basic ATK on an enemy, Kafka immediately
-                                    launches 1 follow-up attack and deals Lightning DMG equal to 42/140/159% of her ATK
-                                    to that enemy, with a 100% base chance to inflict Shock equivalent to that applied
-                                    by her Ultimate to the attacked enemy target for 2 turns. This effect can only be
-                                    triggered 1 time per turn.</p>
-                            </div>
-                            <div class="half">
-                                <img src="/imgs/misc/unavailable.png" width="50%">
-                            </div>
-                        </div>
-                        <div id="Technique9" class="tabcontent">
-                            <div class="half">
-                                <h3>Mercy Is Not Forgiveness</h3>
-                                <p id="font12">Immediately attacks all enemies within a set range. After entering battle, deals
-                                    Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to
-                                    inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2
-                                    turn(s).</p>
+                                <h3>Miracle Flash</h3>
+                                <p>Immediately attacks the enemy. After entering battle, deals Fire DMG
+                                    equal to 50% of Asta's ATK to all enemies.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
@@ -1556,7 +1550,134 @@
                         </div>
                     </div>
                     <script> //i stole this from w3schools*/
-                        function txt9(cityName, elmnt, color) {
+                        function txt10(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgp">
+            <div class="cardq">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Lynx_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Lynx</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Abundance.webp" width="15%">
+                            <p class="inline">Abundance</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Quantum.webp" width="15%">
+                            <p class="inline">Quantum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Lynx_Icon.webp" width="35%">
+                            <p class="inline">Lynx</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Abundance.webp" width="15%">
+                            <p class="inline">Abundance</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Quantum.webp" width="15%">
+                            <p class="inline">Quantum</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt11('Auto11', this, '#ce5252')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt11('Skill11', this, '#ce5252')">Skill</button>
+                            <button class="tablink" onclick="txt11('Ultimate11', this, '#ce5252')">Ultimate</button>
+                            <button class="tablink" onclick="txt11('Talent11', this, '#ce5252')">Talent</button>
+                            <button class="tablink" onclick="txt11('Technique11', this, '#ce5252')">Technique</button>
+                        </div>
+                        <div id="Auto11" class="tabcontent">
+                            <div class="half">
+                                <h3>Ice Crampon Technique</h3>
+                                <p>Deals Quantum DMG equal to 25/50/55% of Lynx's Max HP to a single enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill11" class="tabcontent">
+                            <div class="half">
+                                <h3>Salted Camping Cans</h3>
+                                <p id="font9">Applies "Survival Response" to a single target ally and increases their
+                                    Max HP by 5/7.5/8% of Lynx's Max HP plus 50/200/223. If the target ally is a
+                                    character on the Path of Destruction or Preservation, the chance of them being
+                                    attacked by enemies will greatly increase. "Survival Response" lasts for 2 turn(s).
+                                    Restores the target's HP by 8/12/12.8% of Lynx's Max HP plus 80/320/356.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate11" class="tabcontent">
+                            <div class="half">
+                                <h3>Outdoor Survival Experience</h3>
+                                <p id="font9">When using Lynx's Skill or Ultimate, applies continuous healing to the target ally
+                                    for 2 turn(s), restoring the target ally's HP by an amount equal to 2.4/3.6/3.84% of
+                                    Lynx's Max HP plus 24/96/107 at the start of each their turn. If the target has
+                                    "Survival Response", the continuous healing effect additionally restores HP by an
+                                    amount equal to 3/4.5/4.8% of Lynx's Max HP plus 30/120/134.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent11" class="tabcontent">
+                            <div class="half">
+                                <h3>Chocolate Energy Bar</h3>
+                                <p id="font15">After Lynx uses her Technique, at the start of the next battle, all
+                                    allies are granted her Talent's continuous healing effect, lasting for 2 turn(s).
+                                </p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique11" class="tabcontent">
+                            <div class="half">
+                                <h3>Miracle Flash</h3>
+                                <p>Immediately attacks the enemy. After entering battle, deals Fire DMG
+                                    equal to 50% of Asta's ATK to all enemies.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt11(cityName, elmnt, color) {
                             // Hide all elements with class="tabcontent" by default */
                             var i, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");

@@ -649,6 +649,14 @@ p {
     width:25%;
 }
 
+.rounded{
+    border-radius: 15px;
+}
+
+#white{
+    color: #d4d4d4;
+}
+
 #font6 {
     font-size: 6px;
 }

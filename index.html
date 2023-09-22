@@ -659,7 +659,8 @@
                             </div>
                             <div class="half">
                                 <video class="rounded" width="100%" autoplay loop muted>
-                                    <source src="/vids/march_7th_skills/Frigid_Cold_Arrow_Preview.mp4" type="video/ogg" />
+                                    <source src="/vids/march_7th_skills/Frigid_Cold_Arrow_Preview.mp4"
+                                        type="video/ogg" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -674,7 +675,8 @@
                             </div>
                             <div class="half">
                                 <video class="rounded" width="100%" autoplay loop muted>
-                                    <source src="/vids/march_7th_skills/The_Power_Of_Cuteness_Preview.mp4" type="video/ogg" />
+                                    <source src="/vids/march_7th_skills/The_Power_Of_Cuteness_Preview.mp4"
+                                        type="video/ogg" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -1259,7 +1261,8 @@
                                 <h3>Turn a Profit!</h3>
                                 <p id="font12">Numby enters the Windfall Bonanza! state, increasing its SPD by 50%, CRIT
                                     Damage by
-                                    12.5/25/27.5%, and Damage Multiplier by 75/150/165%. Windfall Bonanza! lasts 2 turns before wearing off.</p>
+                                    12.5/25/27.5%, and Damage Multiplier by 75/150/165%. Windfall Bonanza! lasts 2 turns
+                                    before wearing off.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
@@ -1269,8 +1272,10 @@
                             <div class="half">
                                 <h3>Pig Market?!</h3>
                                 <p id="font9">Summons Numby at the start of battle. Numby has a default speed of 80.
-                                    When it attacks or does a follow-up attack, deal Fire DMG equal to 75/150/165% of Topaz's ATK
-                                    to the enemy target with Proof of Debt. If there are no enemy targets with Proof of Debt
+                                    When it attacks or does a follow-up attack, deal Fire DMG equal to 75/150/165% of
+                                    Topaz's ATK
+                                    to the enemy target with Proof of Debt. If there are no enemy targets with Proof of
+                                    Debt
                                     on the field, Topaz then applies Proof of Debt to a random enemy target.
 
                                     When Topaz is down, Numby retreats.</p>
@@ -1282,7 +1287,8 @@
                         <div id="Technique8" class="tabcontent">
                             <div class="half">
                                 <h3>Explicit Subsidy</h3>
-                                <p>Numby finds treasure for you or something that shit is so long im not writing all of it.</p>
+                                <p>Numby finds treasure for you or something that shit is so long im not writing all of
+                                    it.</p>
                             </div>
                             <div class="half">
                                 <img src="/imgs/misc/unavailable.png" width="50%">
@@ -1291,6 +1297,266 @@
                     </div>
                     <script> //i stole this from w3schools*/
                         function txt8(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgg">
+            <div class="cardl">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Kafka_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Kafka (mommy)</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Nihility.webp" width="15%">
+                            <p class="inline">Nihility</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Lightning.webp" width="15%">
+                            <p class="inline">Lightning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Kafka_Icon.webp" width="35%">
+                            <p class="inline">Kafka</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Nihility.webp" width="15%">
+                            <p class="inline">Nihility</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Lightning.webp" width="15%">
+                            <p class="inline">Lightning</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt9('Auto9', this, '#ce5252')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt9('Skill9', this, '#ce5252')">Skill</button>
+                            <button class="tablink" onclick="txt9('Ultimate9', this, '#ce5252')">Ultimate</button>
+                            <button class="tablink" onclick="txt9('Talent9', this, '#ce5252')">Talent</button>
+                            <button class="tablink" onclick="txt9('Technique9', this, '#ce5252')">Technique</button>
+                        </div>
+                        <div id="Auto9" class="tabcontent">
+                            <div class="half">
+                                <h3>Midnight Tumult</h3>
+                                <p>Deals 50/100/110% of Kafka's ATK as Lightning DMG to a target enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill9" class="tabcontent">
+                            <div class="half">
+                                <h3>Caressing Moonlight</h3>
+                                <p id="font10">Deals Lightning DMG equal to 80/160/176% of Kafka's ATK to a target enemy
+                                    and Lightning DMG equal to 30/60/66% of Kafka's ATK to enemies adjacent to it. If
+                                    the target enemy is currently receiving DoT, all DoTs currently placed on that enemy
+                                    immediately produce DMG equal to 60/75/78% of their original DMG.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate9" class="tabcontent">
+                            <div class="half">
+                                <h3>Twilight Trill</h3>
+                                <p id="font10">Deals Lightning DMG equal to 48/80/86% of Kafka's ATK to all enemies,
+                                    with a 100% base chance for enemies hit to become Shocked and immediately take DMG
+                                    equal to 80/100/104% of the DoT. Shock lasts for 2 turn(s). While Shocked, enemies
+                                    receive Lightning DoT equal to 116/290/318% of Kafka's ATK at the beginning of each
+                                    turn.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent9" class="tabcontent">
+                            <div class="half">
+                                <h3>Gentle but Cruel</h3>
+                                <p id="font10">After an ally of Kafka's uses Basic ATK on an enemy, Kafka immediately
+                                    launches 1 follow-up attack and deals Lightning DMG equal to 42/140/159% of her ATK
+                                    to that enemy, with a 100% base chance to inflict Shock equivalent to that applied
+                                    by her Ultimate to the attacked enemy target for 2 turns. This effect can only be
+                                    triggered 1 time per turn.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique9" class="tabcontent">
+                            <div class="half">
+                                <h3>Mercy Is Not Forgiveness</h3>
+                                <p id="font12">Immediately attacks all enemies within a set range. After entering battle, deals
+                                    Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to
+                                    inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2
+                                    turn(s).</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt9(cityName, elmnt, color) {
+                            // Hide all elements with class="tabcontent" by default */
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Remove the background color of all tablinks/buttons
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].style.backgroundColor = "";
+                            }
+
+                            // Show the specific tab content
+                            document.getElementById(cityName).style.display = "block";
+
+                            // Add the specific color to the button used to open the tab content
+                            elmnt.style.backgroundColor = color;
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="gradientbgp">
+            <div class="cardf">
+                <div class="overlap">
+                    <div class="moveleft">
+                        <img src="/imgs/character_spash/Character_Asta_Splash_Art.webp" width="100%">
+                    </div>
+                    <div class="moveright">
+                        <h3>Asta</h3>
+                        <div class="txt">
+                            <img src="/imgs/path_icons/Path_Harmony.webp" width="15%">
+                            <p class="inline">Harmony</p>
+                        </div>
+                        <div class="txt">
+                            <img src="/imgs/element_icons/Type_Fire.webp" width="15%">
+                            <p class="inline">Fire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movedown">
+                    <div class="desc">
+                        <div class="txt2">
+                            <img src="/imgs/character_icons/Character_Asta_Icon.webp" width="35%">
+                            <p class="inline">Asta/p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/path_icons/Path_Harmony.webp" width="15%">
+                            <p class="inline">Harmony</p>
+                        </div>
+                        <div class="txt2">
+                            <img src="/imgs/element_icons/Type_Fire.webp" width="15%">
+                            <p class="inline">Fire</p>
+                        </div>
+                    </div>
+                    <div class="bro">
+                        <div class="abilities">
+                            <button class="tablink" onclick="txt10('Auto10', this, '#ce5252')"
+                                id="defaultOpen">Auto</button>
+                            <button class="tablink" onclick="txt10('Skill10', this, '#ce5252')">Skill</button>
+                            <button class="tablink" onclick="txt10('Ultimate10', this, '#ce5252')">Ultimate</button>
+                            <button class="tablink" onclick="txt10('Talent10', this, '#ce5252')">Talent</button>
+                            <button class="tablink" onclick="txt10('Technique10', this, '#ce5252')">Technique</button>
+                        </div>
+                        <div id="Auto9" class="tabcontent">
+                            <div class="half">
+                                <h3>Midnight Tumult</h3>
+                                <p>Deals 50/100/110% of Kafka's ATK as Lightning DMG to a target enemy.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Skill9" class="tabcontent">
+                            <div class="half">
+                                <h3>Caressing Moonlight</h3>
+                                <p id="font10">Deals Lightning DMG equal to 80/160/176% of Kafka's ATK to a target enemy
+                                    and Lightning DMG equal to 30/60/66% of Kafka's ATK to enemies adjacent to it. If
+                                    the target enemy is currently receiving DoT, all DoTs currently placed on that enemy
+                                    immediately produce DMG equal to 60/75/78% of their original DMG.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Ultimate9" class="tabcontent">
+                            <div class="half">
+                                <h3>Twilight Trill</h3>
+                                <p id="font10">Deals Lightning DMG equal to 48/80/86% of Kafka's ATK to all enemies,
+                                    with a 100% base chance for enemies hit to become Shocked and immediately take DMG
+                                    equal to 80/100/104% of the DoT. Shock lasts for 2 turn(s). While Shocked, enemies
+                                    receive Lightning DoT equal to 116/290/318% of Kafka's ATK at the beginning of each
+                                    turn.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Talent9" class="tabcontent">
+                            <div class="half">
+                                <h3>Gentle but Cruel</h3>
+                                <p id="font10">After an ally of Kafka's uses Basic ATK on an enemy, Kafka immediately
+                                    launches 1 follow-up attack and deals Lightning DMG equal to 42/140/159% of her ATK
+                                    to that enemy, with a 100% base chance to inflict Shock equivalent to that applied
+                                    by her Ultimate to the attacked enemy target for 2 turns. This effect can only be
+                                    triggered 1 time per turn.</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                        <div id="Technique9" class="tabcontent">
+                            <div class="half">
+                                <h3>Mercy Is Not Forgiveness</h3>
+                                <p id="font12">Immediately attacks all enemies within a set range. After entering battle, deals
+                                    Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to
+                                    inflict Shock equivalent to that applied by her Ultimate on every enemy target for 2
+                                    turn(s).</p>
+                            </div>
+                            <div class="half">
+                                <img src="/imgs/misc/unavailable.png" width="50%">
+                            </div>
+                        </div>
+                    </div>
+                    <script> //i stole this from w3schools*/
+                        function txt9(cityName, elmnt, color) {
                             // Hide all elements with class="tabcontent" by default */
                             var i, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");

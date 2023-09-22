@@ -32,7 +32,7 @@ a {
 
 .gradientbgg {
     background-image: linear-gradient(#fddd73, #ffb158);
-    width: 27%;
+    width: 22.5%;
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ a {
 
 .gradientbgp {
     background-image: linear-gradient(#b181ff, #9645ff);
-    width: 27%;
+    width: 22.5%;
     height: 300px;
     align-items: center;
     justify-content: center;

@@ -60,10 +60,12 @@
                                 <p>Deals Quantum DMG equal to 50/100/110% of Seele's ATK to a single enemy.</p>
                             </div>
                             <div class="half">
+                                <a href="/vids/seele_skills/Thwack_Preview.ogg" target="_blank">
                                 <video class="rounded" width="100%" autoplay loop muted>
                                     <source src="/vids/seele_skills/Thwack_Preview.ogg" type="video/ogg" />
                                     Your browser does not support the video tag.
                                 </video>
+                            </a>
                             </div>
                         </div>
                         <div id="Skill" class="tabcontent">
@@ -186,7 +188,7 @@
                     <div class="bro">
                         <div class="abilities">
                             <button class="tablink" onclick="txt1('Auto1', this, '#8f35a5')"
-                                id="defaultOpen">Auto</button>
+                                id="defaultOpen1">Auto</button>
                             <button class="tablink" onclick="txt1('Skill1', this, '#8f35a5')">Skill</button>
                             <button class="tablink" onclick="txt1('Ultimate1', this, '#8f35a5')">Ultimate</button>
                             <button class="tablink" onclick="txt1('Talent1', this, '#8f35a5')">Talent</button>
@@ -272,29 +274,29 @@
                         </div>
                     </div>
                     <script> //i stole this from w3schools*/
-                        function txt1(cityName, elmnt, color) {
+                        function txt1(cityName1, elmnt, color) {
                             // Hide all elements with class="tabcontent" by default */
-                            var i, tabcontent, tablinks;
+                            var x, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");
-                            for (i = 0; i < tabcontent.length; i++) {
-                                tabcontent[i].style.display = "none";
+                            for (x = 0; x < tabcontent.length; x++) {
+                                tabcontent[x].style.display = "none";
                             }
 
                             // Remove the background color of all tablinks/buttons
                             tablinks = document.getElementsByClassName("tablink");
-                            for (i = 0; i < tablinks.length; i++) {
-                                tablinks[i].style.backgroundColor = "";
+                            for (x = 0; x < tablinks.length; x++) {
+                                tablinks[x].style.backgroundColor = "";
                             }
 
                             // Show the specific tab content
-                            document.getElementById(cityName).style.display = "block";
+                            document.getElementById(cityName1).style.display = "block";
 
                             // Add the specific color to the button used to open the tab content
                             elmnt.style.backgroundColor = color;
                         }
 
                         // Get the element with id="defaultOpen" and click on it
-                        document.getElementById("defaultOpen").click();
+                        document.getElementById("defaultOpen1").click();
                     </script>
                 </div>
             </div>

@@ -77,6 +77,198 @@ a {
     height: 305px;
 }
 
+.gradientbgg1 {
+    background-image: linear-gradient(#fddd73, #ffb158);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgp1 {
+    background-image: linear-gradient(#b181ff, #9645ff);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgg1:hover, .gradientbgp1:hover{
+    width: 29%;
+    height: 305px;
+    transform: translateY(-10px);
+}
+
+.gradientbgg2 {
+    background-image: linear-gradient(#fddd73, #ffb158);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgp2 {
+    background-image: linear-gradient(#b181ff, #9645ff);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgg2:hover, .gradientbgp2:hover{
+    width: 29%;
+    height: 305px;
+    transform: rotate(1turn);
+}
+
+.gradientbgg3 {
+    background-image: linear-gradient(#fddd73, #ffb158);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgp3 {
+    background-image: linear-gradient(#b181ff, #9645ff);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgg3:hover, .gradientbgp3:hover{
+    width: 29%;
+    height: 305px;
+    transform: rotate(-1turn);
+}
+
+.gradientbgg4 {
+    background-image: linear-gradient(#fddd73, #ffb158);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgp4 {
+    background-image: linear-gradient(#b181ff, #9645ff);
+    width: 22.5%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-decoration-color: none;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.9s 0.1s;
+}
+
+.gradientbgg4:hover, .gradientbgp3:hover{
+    width: 29%;
+    height: 305px;
+    transform: translateY(10px);
+}
+
 .cardq {
     height: 100%;
     width: 100%;
@@ -93,8 +285,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -161,8 +351,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -229,8 +417,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -257,7 +443,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateX(-600px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -267,11 +453,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateY(-400px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateY(-400px);
         }
 
         .movedown {
@@ -297,8 +483,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -365,8 +549,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -433,8 +615,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;
@@ -501,8 +681,6 @@ a {
     cursor: pointer;
     position: relative;
     flex-wrap: wrap;
-    transition:
-        all 1s;
 
     .moveleft {
         display: flex;

@@ -269,6 +269,64 @@ a {
     transform: translateY(10px);
 }
 
+@media screen and (max-width:1700px) {
+    .gradientbgg, .gradientbgp{
+        width: 29%;
+    }
+
+    .gradientbgg:hover, .gradientbgp:hover{
+        width: 34%;
+        height: 305px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .gradientbgg, .gradientbgp{
+        width: 37%;
+        transition: all 0.9s 0.1s;
+    }
+
+    .gradientbgg:hover, .gradientbgp:hover{
+        width:42%;
+        height: 305px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .gradientbgg, .gradientbgp{
+        width: 68%;
+        transition: all 0.9s 0.1s;
+    }
+
+    .gradientbgg:hover, .gradientbgp:hover{
+        width:75%;
+        height: 305px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .gradientbgg, .gradientbgp{
+        width: 68%;
+        transition: all 0.9s 0.1s;
+        height: 400px;
+    }
+
+    .half {
+        width: 49%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        vertical-align: text-top;
+        align-items: start;
+    }
+
+    .gradientbgg:hover, .gradientbgp:hover{
+        width:75%;
+        height: 410px;
+    }
+}
+
+
+
 .cardq {
     height: 100%;
     width: 100%;
@@ -311,7 +369,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -321,11 +379,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -377,7 +435,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -387,11 +445,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -443,7 +501,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateX(-600px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -453,11 +511,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateY(-400px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateY(-400px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -509,7 +567,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -519,11 +577,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -575,7 +633,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -585,11 +643,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -641,7 +699,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -651,11 +709,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -707,7 +765,7 @@ a {
         height: 300px;
         position: relative;
         flex-direction: column;
-        transform: translateY(-400px);
+        transform: translateY(-450px);
         transition:
             transform 0.5s 0.25s;
     }
@@ -717,11 +775,11 @@ a {
         box-shadow: -5px 5px 25px #000;
 
         .moveleft {
-            transform: translateX(-300px);
+            transform: translateX(-350px);
         }
 
         .moveright {
-            transform: translateX(300px);
+            transform: translateX(350px);
         }
 
         .movedown {
@@ -776,7 +834,7 @@ a {
     color: white;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    align-items: start;
     flex-direction: row;
     width: 100%;
 }
@@ -809,8 +867,8 @@ a {
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    vertical-align: text-top;
+    align-items: start;
 }
 
 .wrap {

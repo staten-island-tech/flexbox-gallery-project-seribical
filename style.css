@@ -935,8 +935,14 @@ p {
     font-size: 15px;
 }
 
-#sushang{
-    animation: rotate 1.25s linear infinite;
+#michaelwhalen{
+    animation: rotate 0.75s linear infinite;
+    border-radius: 1000px;
+    transition: all 0.25s;
+}
+
+#michaelwhalen:hover{
+    width: 23%;
 }
 
 @keyframes rotate {
